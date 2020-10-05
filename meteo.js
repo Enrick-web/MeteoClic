@@ -41,3 +41,10 @@ document.querySelector("form").addEventListener("submit", function (e) {
   apiCall(ville);
 });
 apiCall("Paris");
+
+// Heure
+let today = new Date;
+let heure = document.querySelector("#clock");
+document.querySelector('#clock').innerHTML = today.toString;
+
+console.log(today.toString())
