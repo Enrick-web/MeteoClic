@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WeatherClic</title>
+  <title>MétéoClic</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
   <link rel="stylesheet" href="main.css" />
@@ -14,7 +14,7 @@
   <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="index.html"><i class="fas fa-cloud-sun"></i> METEO CLIC</a>
+        <a class="navbar-brand" href="index.html"><i class="fas fa-cloud-sun"></i> METEOCLIC</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
           aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -30,9 +30,7 @@
       </div>
     </nav>
   </div>
-  <div class="container">
-    <h3 id="clock" class="display-4 justify-content-center"></h3>
-  </div>
+
   <div class="container contenue">
     <div class="row justify-content-center">
       <!--Formulaire-->
@@ -50,12 +48,14 @@
         <br />
         <p>
           Bienvenue sur notre application météo.<br />
-          Ceci est un projet Open Source le code source est disponible sur
+          Le code source est disponible sur
           GitHub en cliquant sur le lien ci dessous.
         </p>
-        <a href="https://github.com/" target="_blank"><button class="btn btn-success btn-custom">
+        <a href="https://github.com/Enrick-web/MeteoClic" target="_blank"><button class="btn btn-success btn-custom">
             <i class="fab fa-github"></i> Code source
           </button></a>
+        <hr>
+        <h3 id="my-hour" class="display-4 justify-content-center"></h3>
       </div>
       <!-- Informations Météo-->
       <div class="col-12 col-sm-6 justify-content-center my-4">
@@ -81,7 +81,7 @@
     </div>
   </div>
   <footer class="container-fluid bg-dark navbar-dark">
-    <p>© 2020, WeatherClic, Open Source Project</p>
+    <p>© 2020, WeatherClic</p>
   </footer>
 
   <script src="meteo.js"></script>
