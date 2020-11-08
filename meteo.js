@@ -3,9 +3,7 @@ const api = "86b7eddbb3c979a0c72b9f49308e93c7";
 let apiCall = function (city) {
   let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api}&units=metric&lang=fr`;
 
-  fetch(url)
-    .then((response) =>
-      response.json().then((data) => {
+  fetch(url).then((response) => response.json().then((data) => {
         console.log(data);
         document.querySelector("#city").innerHTML =
           '<i class="fas fa-globe-europe"></i>' +
